@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics Route Optimizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📍 Logistics Route Optimizer</h1>
+            <p>Add two or more locations and click "Optimize" to find the most efficient route.</p>
+        </header>
+
+        <main class="main-content">
+            <div class="controls-panel">
+                <h2>Add Location</h2>
+                <div class="input-group">
+                    <input type="text" id="name-input" placeholder="Location Name (e.g., Warehouse)">
+                    <div class="coords">
+                        <input type="number" id="x-input" placeholder="X Coordinate">
+                        <input type="number" id="y-input" placeholder="Y Coordinate">
+                    </div>
+                    <button id="add-btn">Add Location</button>
+                </div>
+                
+                <hr>
+
+                <h2>Locations List</h2>
+                <ul id="locations-list">
+                    </ul>
+                <button id="optimize-btn">🚀 Optimize Route</button>
+            </div>
+            
+            <div class="visualization-panel">
+                <h2>Route Visualization</h2>
+                <canvas id="route-canvas" width="550" height="450"></canvas>
+                <div id="result-text">Your optimized route distance will appear here.</div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
