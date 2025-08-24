@@ -152,6 +152,11 @@ hr {
     border-radius: 8px;
     width: 100%;
     height: auto;
+    cursor: grab;
+}
+
+#route-canvas:active {
+    cursor: grabbing;
 }
 
 #result-text {
